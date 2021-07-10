@@ -1,10 +1,12 @@
 package Structural.DecoratorViaObj;
 
-public class Decorator implements MyInterface{
+public class Decorator implements MyInterface {
     private final BaseClass baseObject;
-    Decorator(String surname){
+
+    Decorator(String surname) {
         this.baseObject = new BaseClass(surname);
     }
+
     @Override
     public String tell() {
         return baseObject.sound();
