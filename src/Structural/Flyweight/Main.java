@@ -5,7 +5,7 @@ public class Main {
         ArrancarFactory factory = new ArrancarFactory();
         Arrancar primeraEspada = factory.getArrancar("Starrk", "blue");
         Arrancar segundaEspada = factory.getArrancar("Baraggan", "dark");
-        Arrancar primeraEspada2 = factory.getArrancar("Starrk", "aqua");
+        Arrancar primeraEspada2 = factory.getArrancar("Starrk", "pink");
 
         System.out.println(primeraEspada.getName() + "  " + primeraEspada.getColor());
         System.out.println(segundaEspada.getName() + "  " + segundaEspada.getColor());
