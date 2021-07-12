@@ -7,9 +7,9 @@ public class ArrancarFactory {
 
     private final Map<String, Arrancar> map = new HashMap<>();
 
-    public Arrancar getArrancar(String name,String color){
+    public Arrancar getArrancar(String name, String color) {
         Arrancar arrancar = map.get(name);
-        if (arrancar == null){
+        if (arrancar == null) {
             arrancar = new Arrancar();
             arrancar.setName(name);
             arrancar.setColor(color);
