@@ -1,16 +1,13 @@
 package Structural.Facade;
 
 public class Car {
-    private final Engine engine;
-    private final HeadLight headLights;
-    private final SeatBelt seatBelt;
+    private final Engine engine = new Engine();
+    private final HeadLight headLights = new HeadLight();
+    private final SeatBelt seatBelt = new SeatBelt();
     private final Driver driver;
 
 
-    public Car(Engine engine, HeadLight headLights, SeatBelt seatBelt, Driver driver) {
-        this.engine = engine;
-        this.headLights = headLights;
-        this.seatBelt = seatBelt;
+    public Car(Driver driver) {
         this.driver = driver;
     }
 
